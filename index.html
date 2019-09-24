@@ -2,25 +2,88 @@
 <meta charset="utf-8">
 <title>HTML 5 Doc</title>
 	<style>
-		body,html {padding: 0; margin: 0}
-		header h1 { text-align:center;
-		font-family: arial, helvetica;
-		font-size: 30px;
+		body,html {
+			padding: 0;
+			margin: 0
 		}
-		header {background-color: #878787;
-		color: #fff; padding: 20px 40px; width: 100%; box-sizing: border-box;}
-		
-		nav { background-color: #AD3DCB; padding: 15px 0;}
-		nav a {color: #fff; font-size: 19px; text-decoration: none;}
-		
-		nav ul {list-style-type:none; }
-		nav ul li {display: inline-block}
-		
-		body h1 { text-align:center;}
-		
-		section {float: left;}
-		aside {float: right;}
-	
+		section h1 {
+			font-size: 40px;
+		}
+		aside h1 {
+			font-size: 40px;
+		}
+		header h1 { 
+			text-align:center;
+			font-family: arial, helvetica;
+			font-size: 40px;
+		}
+		header {
+			background-color: #878787;
+			color: #fff; 
+			padding: 20px 40px;
+			width: 100%; 
+			box-sizing: border-box;
+		}
+		nav { 
+			background-color: #AD3DCB; padding: 15px 0;
+		}
+		nav a {
+			color: #000;
+			font-size: 19px;
+			text-decoration: none;
+			font-family: arial, helvetica;
+			display: block;
+			padding: 0px 75px;
+		}
+		nav ul {
+			list-style-type:none; 
+		}
+		nav ul li {
+			display: inline-block
+		}
+		body h1 { 
+			text-align:center;
+		}
+		section {
+			float: left;
+			margin: auto;
+  			width: 77%;
+  			border: 10px solid;
+  			border-color: #878787;
+  			min-height: 90%;
+		}
+		aside {
+			float: right;
+			margin: auto;
+  			width: 20%;
+  			background-color: #AD3DCB;
+  			border: 10px solid;
+  			border-color: #878787;
+  			min-height: 90%;
+		}
+		aside ul {
+			font-size: 18px;
+		}
+		footer {
+			bottom: 0;
+			width: 100%;
+		}
+		nav a:hover {
+			background-color: #AD3666;
+			border: none;
+		}
+		button {
+			float: right;
+ 	 		padding: 5px 50px;
+  			background: #000;
+  			font-size: 17px;
+ 			border: none;
+			cursor: pointer;
+			color: #fff;
+		}
+		input {
+			height: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -28,26 +91,56 @@
 	<h1>Header</h1>
 	</header>
 	<nav>
-	<ul>
-	<li><a href="#">Home</a></li>
-	<li><a href="#">Our Team</a></li>
-	<li><a href="#">Projects</a></li>
-	<li><a href="#">Contact</a></li>
-	<li>
-	<form>
-	<input type="text" name="search">
-	<input type="submit" value="Search">
-	</form>
-	</li>
-	</ul>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">OUR TEAM</a></li>
+			<li><a href="#">PROJECTS</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li>
+				<form>
+					<input type="text" placeholder="Search Query">
+					<button type = "submit">Go!</button>
+				</form>
+			</li>
+		</ul>
 	</nav>
 	<section>
 		<h1>Article Heading</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		</p>
+		<h3>subsection</h3>
+		<p>
+			Quam viverra orci sagittis eu volutpat odio. Tellus molestie nunc non blandit massa enim nec. Mauris augue neque gravida in fermentum et sollicitudin ac orci. 
+			</br>
+			</br>
+			Erat pellentesque adipiscing commodo elit. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
+		</p>
+		<h3>Another subsection</h3>
+		<p>
+			Nulla facilisi nullam vehicula ipsum. Duis convallis convallis tellus id interdum velit laoreet. Varius quam quisque id diam vel quam. 
+			</br>
+			</br>
+			Gravida neque convallis a cras. Euismod elementum nisi quis eleifend. Egestas fringilla phasellus faucibus scelerisque eleifend donec.
+		</p>
 	</section>
 	<aside>
 		<h1>Related</h1>
+		<ul>
+			<li><a href="#">Oh I do like to be beside the seaside</a></li>
+			</br>
+			<li><a href="#">Oh I do like to be beside the sea</a></li>
+			</br>
+			<li><a href="#">Although in the North of England</a></li>
+			</br>
+			<li><a href="#">It never stops raining</a></li>
+			</br>
+			<li><a href="#">Oh well...</a></li>
+		</ul>
 	</aside>
 	<footer>
+		</br>
+		</br>
 		<h6>Copyright 2050 by nobody. All rights reserved.</h6>
 	</footer>
 </body>
